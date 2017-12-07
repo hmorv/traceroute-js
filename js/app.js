@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	traceroute = require('traceroute');
+	var traceroute = require('traceroute');
 	traceroute.trace('google.com', function(err, hops) {
 		if(!err)
 			console.log(hops);
